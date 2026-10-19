@@ -1,41 +1,55 @@
 :root {
     --bg: #f2f6f7;
-    --ink: #cce4f4;
-    --muted: #c1d4e0;
-    --line: #2f383c;
-    --teal: #efb7a5;
-    --marigold: #031b35;
+    --ink: #102a36;
+    --muted: #465d68;
+    --line: #cbd7dc;
+    --teal: #07565c;
+    --marigold: #efb7a5;
  
     --font-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
     --font-body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
- 
-    box-sizing: border-box;
+
+    color-scheme: light;
+
 }
  
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #eee0ca;
-        --ink: #010a0d;
-        --muted: #0e3c55;
-        --line: #263945;
-        --teal: #05565c;
+        --bg: #101c23;
+        --ink: #edf4f7;
+        --muted: #bdcbd2;
+        --line: #394a53;
+        --teal: #8bd2cb;
+        --margold: #efb7a5;
+
+        color-scheme: dark;
     }
 }
  
-*, *::before, *::after { box-sizing: inherit; }
+*, 
+*::before, 
+*::after { 
+    box-sizing: border-box; }
+
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+}
 
 body {
     margin: 0;
     background: var(--bg);
     color: var(--ink);
     font-family: var(--font-body);
-    font-size: 1.0625rem;
-    line-height: 1.65;
+    font-size: 1rem;
+    line-height: 1.75;
     -webkit-font-smoothing: antialiased;
 }
  
 header,
 main,
+
 footer {
     width: min(100% - 2.5rem, 62rem);
     margin-inline: auto;
@@ -51,9 +65,9 @@ h1 {
     font-family: var(--font-display);
     font-weight: 800;
     font-size: clamp(2.75rem, 9vw, 6rem);
-    line-height: 0.95;
-    letter-spacing: -0.03em;
-    text-wrap: justify;
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
 }
  
 h1::after {
@@ -69,7 +83,7 @@ header p {
     max-width: 40rem;
     margin: 1.75rem 0 0;
     color: var(--muted);
-    font-size: 1.125rem;
+    font-size: 1.062rem;
 }
  
 section {
@@ -100,7 +114,6 @@ section ul {
     margin: 0;
 }
  
-section p { text-align: left; }
  
 h3 {
     margin: 2rem 0 0.6rem;
@@ -108,12 +121,13 @@ h3 {
     font-weight: 600;
     font-size: 1.1875rem;
     line-height: 1.3;
+    text-wrap: balance;
 }
  
 section > h3:first-of-type,
 article > h3:first-child { margin-top: 0; }
  
-ul {
+.skills ul {
     list-style: none;
     padding: 0;
     display: flex;
@@ -121,7 +135,7 @@ ul {
     gap: 0.5rem;
 }
  
-li {
+.skills li {
     padding: 0.2rem 0.75rem;
     border: 1px solid var(--line);
     border-radius: 999px;
@@ -157,6 +171,7 @@ a {
     text-decoration-color: var(--marigold);
     text-decoration-thickness: 0.2em;
     text-underline-offset: 0.2em;
+    transition: color 0.2s ease;
 }
  
 a:hover { color: var(--teal); }
@@ -186,3 +201,96 @@ footer p { margin: 0; }
     }
 }
  
+
+.site-nav {
+    width: min(100% - 2.5rem, 62rem);
+    margin-inline: auto;
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--line);
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: var(--ink);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0.4rem;
+}
+
+.nav-links a:hover {
+    color: var(--teal);
+    background: color-mix(in srgb, var(--teal) 10%, transparent);
+}
+
+.nav-links a:focus-visible {
+    outline: 3px solid var(--teal);
+    outline-offset: 3px;
+}
+
+@media (max-width: 40rem) {
+    .site-nav {
+        width: calc(100% - 2rem);
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+        gap: 0.25rem;
+    }
+
+    .nav-links a {
+        padding: 0.4rem 0.55rem;
+        font-size: 0.85rem;
+    }
+}
+
+
+.experience article {
+    margin-top: 2rem;
+}
+
+.experience article:first-of-type {
+    margin-top: 0;
+}
+
+.experience article h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.experience article p {
+    margin: 0 0 0.75rem;
+    color: var(--muted);
+}
+
+.experience article ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    max-width: 42rem;
+}
+
+.experience article li {
+    padding-left: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience article li::marker {
+    color: var(--teal);
+}
+
+
+
+
+
