@@ -1,26 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio of Sakina Maharjan,  Data Science student with experience in MEAL, research, program development, and social impact.">
+    
+    <title>Sakina Maharjan | Data Science Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel= "stylesheet" href="style.css">
-    <title>My Portfolio</title>
 </head>
+
 <body>
+
+    <nav  class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <header>
             <h1> SAKINA MAHARJAN</h1>
             <p> Data Science Student  | Senior Development and MEAL Trainee | Enhancing Project Impact Through Data-Driven Insights </p>
     </header>
+
     <main>
-        <section> 
+        <section id="about"> 
             <h2> About Me</h2>
-             <p style="text-align: justify;"> 
+             <p> 
                 Passionate about using technology and data to create meaningful social impact. 
                 Currently pursuing a Computer Science degree specializing in Data Science, with experience in program development, monitoring and evaluation, research, and youth leadership. 
                 Enthusiastic about combining analytical thinking with creativity to solve real-world problems, continuously learn new skills, and explore opportunities at the intersection of technology, social change, and data-driven decision-making.
         </p>
     </section>
-    <section>
+
+    <section id="education">
         <h2> Education </h2>
         <p>
             <b>Bachelor of Computer Science (Hons) - Data Science</b> <br>
@@ -34,7 +58,111 @@
         </p>
     </section>
 
-    <section>
+    <section id="experience" class="experience">
+        <h2>Work Experience</h2>
+
+        <article>
+            <h3>Development and MEAL Senior Trainee</h3>
+            <p>
+                <b>Women LEAD Nepal</b> - July 2026 to Present 
+                <br>
+        </p>
+        <ul>
+            <li>
+                Support Monitoring, Evaluation, Accountability, and Learning
+                (MEAL) activities to track program progress, outcomes, and impact.
+            </li>
+            <li>
+                Contribute to donor reporting, impact tracking, baseline and
+                endline data analysis, and the preparation of program reports.
+            </li>
+            <li>
+                Support proposal development, fundraising documentation,
+                grant tracking, and donor engagement activities.
+            </li>
+            <li>
+                Assist with research, focus group discussions, and
+                documentation to generate insights for evidence-based
+                 program improvement and decision-making.
+            </li>
+        </ul>
+        </article>
+        <article>
+            <br>
+            <h3>Analyst (Remote, Freelance)</h3>
+            <p>
+                <b>Scopify</b> - January 2026 to Present
+            </p>
+            <ul>
+                <li>
+                    Research and verify information on scholarships, fellowships,
+                    grants, traineeships, and other professional development
+                    opportunities.
+                </li>
+                <li>
+                    Assess information accuracy and source credibility to
+                    maintain reliable and useful opportunity listings.
+                </li>
+                <li>
+                    Organize and validate research findings to support
+                    information management and content development.
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <br>
+            <h3>Program Trainee</h3>
+            <p>
+                <b>Women LEAD Nepal</b> - July 2025 to June 2026
+            </p>
+            <ul>
+                <li>
+                    Supported the planning and implementation of youth
+                    leadership and development programs, including the LEAD
+                    Course and Rise to Lead.
+                </li>
+                <li>
+                    Co-facilitated learning sessions on child rights, gender
+                    stereotypes, gender-based violence, civic engagement,
+                    teamwork, and privilege in Madhesh Province and Gandaki Province.
+                </li>
+                <li>
+                    Contributed to program coordination, participant engagement,
+                    documentation, and event management.
+                </li>
+                <li>
+                    Collaborated with team members to support inclusive youth
+                    leadership, civic participation, and gender equality initiatives.
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <br>
+            <h3>Program Intern</h3>
+            <p>
+                <b>Women LEAD Nepal</b> - August 2024 to June 2025
+            </p>
+            <ul>
+                <li>
+                    Assisted with program coordination, workshop preparation,
+                    participant communication, and administrative activities.
+                </li>
+                <li>
+                    Supported youth leadership initiatives and program
+                    implementation focused on gender equality and social impact.
+                </li>
+                <li>
+                    Contributed to program documentation, teamwork, and
+                    day-to-day operational tasks.
+                </li>
+            </ul>
+        </article>
+
+    </section>
+
+    <section id="skills" class="skills">
         <h2> Skills </h2>
         <h3>Technical Skills</h3>
         <ul>
@@ -43,11 +171,13 @@
             <li>Python</li>
             <li>Data Analysis</li>
             <li>Microsoft Office</li>
+            <li>Canva</li>
             <li>Figma</li>
             <li>Research and Data Collection</li>
             <li>Monitoring, Evaluation, Accountability & Learning</li>
             <li>Jira</li>
             <li>Notion</li>
+        
         </ul>
         <h3>Professional Skills</h3>
         <ul>
@@ -64,7 +194,7 @@
         </ul>
     </section>
 
-    <section style="text-align: justify;">
+    <section id="projects" class="projects">
         <h2>Projects</h2>
         <article>
             <h3>ML Based Term Deposit Subscription Prediction for Nepali Commercial Banks</h3>
@@ -75,10 +205,9 @@
                 Clustering, and report development. Implemented and compared Logistic
                 Regression, Decision Tree, Random Forest, Naïve Bayes, and K-Means
                 using Python and Scikit-learn, applying metrics including accuracy,
-                precision, recall, F1-Score, and confusion matrices. Applied the Elbow
-                Method and StandardScaler for customer segmentation and developed
-                insights into customer segmentation and development insights into
-                customer groups for targeted banking marketing.
+                precision, recall, F1-Score, and confusion matrices. Applied the Elbow 
+                Method and StandardScaler for customer segmentation, generating insights 
+                into customer groups to support more targeted banking marketing strategies.
             </p>
             <h3>Loan Eligibility Analysis & Data Mining</h3>
             <p>
@@ -117,7 +246,7 @@
         </article>
     </section>
 
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
         <p>
             Email me at
